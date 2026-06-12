@@ -45,7 +45,7 @@ def get_result(type,resume_text, job_desc):
     )
 
     completion = client.chat.completions.create(
-        model="google/gemma-3n-e2b-it:free",
+        model="nvidia/nemotron-3-ultra-550b-a55b:free",
         messages=[
             {"role": "user", "content": message}
         ]
